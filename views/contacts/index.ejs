@@ -12,14 +12,14 @@
     <tr>
         <th class="text-center">First Name</th>
         <th class="text-center">last Name</th>
-        <th class="text-center">Age</th>
+      
     </tr>
     <!--Repeatable Template Row-->
     <% for(let count=0; count< contactList.length;count++){%>
         <tr>
-            <td class="text-center"><%=contactList[count].firstName%></td>
-            <td class="text-center"><%=contactList[count].lastName%></td>
-            <td class="text-center"><%=contactList[count].age%></td>
+            <td class="text-center"><%=contactList[count].name%></td>
+            <td class="text-center"><%=contactList[count].description%></td>
+            
         </tr>
         <%}%>
 

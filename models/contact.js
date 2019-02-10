@@ -3,11 +3,10 @@ let mongoose=require('mongoose');
 
 //create a model class
 let contactSchema=mongoose.Schema({
-firstName: String,
-lastName: String,
-age:Number
+name: String,
+description: String
 },
 {
-    collection: "first"
+    collection: "Favouritethings"
 });
-module.exports=mongoose.model('demo',contactSchema);
+module.exports=mongoose.model('JaskiranDb',contactSchema);
