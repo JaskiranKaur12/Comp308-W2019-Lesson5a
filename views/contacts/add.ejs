@@ -1,0 +1,37 @@
+<%include ../partials/header.ejs %>
+
+<!--Content for the Add Page-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%=title%></h1>
+            <form action="" class="form" method="POST">
+                <div class="form-group">
+                    <label for="ThingTextField">
+                        Favourite Thing
+                    </label>
+                    <input type="text" class="form-control" 
+                    id="ThingsTextField" 
+                    placeholder="Enter your Favourite Thing"
+                    name="favouriteThing"
+                    required>
+                </div>
+                <div class="form-group">
+                        <label for="ValueTextField">
+                            Favourite Thing names
+                        </label>
+                        <input type="text" class="form-control" 
+                        id="ValueTextField" 
+                        placeholder="Enter the name of favourite things"
+                        name="favouritevalue"
+                        required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-edit"> Submit</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<% include ../partials/footer.ejs%>
